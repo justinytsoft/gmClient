@@ -249,13 +249,60 @@
 }
 
 
+/* 个人中心 */
+.personal_center .mui-bar *,
+.personal_center .headImg *{
+	color: #FFFFFF;
+}
+.personal_center .headImg{
+	text-align: center;
+	background-color: #69d86d;
+	padding-bottom: 20px;
+}
+.personal_center .headImg img{
+	width:70px;
+	height:70px;
+	border: 2px solid #FFFFFF;
+	border-radius: 50%;
+	margin-bottom: 10px;
+}
+.personal_center .mui-bar-nav {
+    -webkit-box-shadow: 0 0px 0px #69d86d;
+    box-shadow: 0 0px 0px #69d86d;
+}
+.personal_center .mui-table-view-cell{
+	border-bottom: 1px solid #f6f6f6;
+}
+
+/* 关于我们 */
+.about_us .mui-bar,
+.personal_center .mui-bar{
+	background-color: #69d86d;
+}
+.about_us .mui-bar *{
+	color: #FFFFFF;
+}
+.about_us .logo{
+	height:300px;
+	text-align: center;
+}
+.about_us .logo img{
+	width:110px;
+	height:110px;
+	border-radius: 10px;
+	margin-top: 70px;
+	margin-bottom: 10px;
+}
+
 /* 修改手机 */
 .phone .mui-btn, button{
 	color: #a9a9a9;
 	width: 30%;
 	height:40px;
 }
-.phone .mui-btn-block{
+
+.phone .mui-btn-block,
+.nickname .mui-btn-block{
 	width:100%;
 	padding: 0;
 	background-color: #ff7e00;
