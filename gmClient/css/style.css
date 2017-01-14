@@ -6,6 +6,9 @@
 	padding-left: 10px;
 	border-left: 3px solid limegreen;
 }
+.bold {
+	font-weight: 600;
+}
 
 /* 浮动 */
 .clr {
@@ -118,6 +121,9 @@
 }
 .pdb10 {
 	padding-bottom: 10px;
+}
+.pdb5 {
+	padding-bottom: 5px;
 }
 
 /* margin */
@@ -248,6 +254,71 @@
 	border-radius: 10px;
 }
 
+
+
+
+
+
+/* 服务商家 */
+.server_merchant .list{
+	height: 105px;
+}
+.server_merchant .list .mui-btn{
+	height: 25px;
+	padding: 0;
+	width:80px;
+	float: right;
+	margin-top: 10px;
+	background-color: #69d86d;
+}
+.server_merchant .list div:first-child{
+	width:40%;
+	margin-right: 10px;
+}
+.server_merchant .list div:last-child{
+	width:54%;
+	height: 100%;
+	margin-right: 10px;
+}
+.server_merchant .list img{
+	width:100%;
+	height:90px;
+	border-radius: 10px;
+}
+.server_merchant .order_by div{
+	width:50%;
+	text-align: center;
+	background-color: #FFFFFF;
+	padding: 10px 0;
+	border-bottom: 2px solid #F6F6F6;
+}
+.server_merchant .order_by div:first-child{
+	border-right: 1px solid #F6F6F6;
+}
+.server_merchant .mui-bar {
+	-webkit-box-shadow: 0 0px 0px #69d86d;
+    box-shadow: 0 0px 0px #69d86d;
+}
+.server_merchant .mui-col-xs-2 {
+    width: 24.666667%;
+}
+.server_merchant .mui-table-view.mui-grid-view 
+.mui-table-view-cell .mui-media-object {
+    width: 60%;
+    max-width: 60%;
+    height: 60%;
+}
+.server_merchant .mui-table-view.mui-grid-view 
+.mui-table-view-cell .mui-media-body {
+    margin-top: 0px;
+    font-size: 12px;
+}
+
+/* 分类页面 */
+.categoryPage input[type=search] {
+    border-radius: 25px;
+    background-color: #FFFFFF;
+}
 
 /* 个人中心 */
 .personal_center .mui-bar *,
