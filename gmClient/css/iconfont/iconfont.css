@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1483987355762'); /* IE9*/
-  src: url('iconfont.eot?t=1483987355762#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1483987355762') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1483987355762') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1483987355762#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1484413962213'); /* IE9*/
+  src: url('iconfont.eot?t=1484413962213#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1484413962213') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1484413962213') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1484413962213#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -76,4 +76,6 @@
 .icon-zhongguoyinhang:before { content: "\e739"; }
 
 .icon-jiansheyinhang:before { content: "\e692"; }
+
+.icon-shop:before { content: "\e602"; }
 

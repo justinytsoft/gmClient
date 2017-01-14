@@ -1,3 +1,16 @@
+
+/*reset*/
+
+body, dd, dl, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, ol, p, select, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+
+
+
 *{
 	font-size: 15px;
 }
@@ -237,7 +250,7 @@
 
 /* 背景颜色 */
 .whiteBg {
-	background-color: #FFFFFF;
+	background-color: #FFFFFF!important;
 }
 .grayBg {
 	background-color: rgb(246, 246, 246);	
@@ -491,3 +504,54 @@
 }
 /*red-dote*/
 .red-dote {width: 6px;height: 6px;border-radius: 50%;display: inline-block;background: red;position: absolute;right: 10px;}
+/*商家相亲*/
+.top-wrap ,.middle-wrap ,.bottom-wrap , .top-wrap-row{background: #fff;}
+.top-wrap-img {font-size: 0px;line-height: 0px;}
+.top-wrap-row ,.middle-wrap {padding: 15px 15px;}
+.top-wrap-row span {font-size: 16px}
+.top-wrap-row .mui-icon {color: rgb(88,207,122);font-size: 15px}
+.top-wrap-row .distant {border: 1px dotted rgb(88,207,122);border-radius: 16px;font-size: 13px;padding: 0px 8px;}
+.middle-wrap {margin-top: 15px;}
+.middle-wrap ul {padding: 0 5px;}
+.middle-wrap ul li {margin-top: 10px;}
+.middle-wrap ul li:nth-of-type(1) {margin-top: 0px;}
+.bottom-wrap {margin-top: 10px;padding: 20px 0px;}
+.bottom-wrap-title {margin-bottom: 10px;}
+.bottom-wrap-title span {padding: 0 75px 0 40px;}
+.bottom-wrap-title span:nth-of-type(1) {border-left: 5px solid rgb(88,207,122);border-right: 1px solid lightgray;}
+.bottom-wrap-info .p {margin: 15px;text-indent: 30px;}
+.bottom-wrap-info .img img{width: 100%;}
+.bottom-wrap-cont .hot .mui-col-xs-6 {float: left;}
+.bottom-wrap-cont .hot .mui-col-xs-6:nth-child(odd){padding: 3px 3px 3px 0;}
+.bottom-wrap-cont .hot .mui-col-xs-6:nth-child(even){padding: 3px 0 3px 3px;}
+.bottom-wrap-cont .hot img {width: 100%;}
+/*goods-list*/
+.goods-list .mui-segmented-control {border-radius: 0px;border: 0px;margin-top: 1px;background: #fff;}
+.goods-list .mui-segmented-control .mui-control-item {line-height: 45px;border: 0;color: #000;}
+.goods-list .mui-segmented-control .mui-control-item.mui-active {background: none;color: rgb(88,207,122);}
+.goods-list .screen-result .mui-col-xs-6{width:49.3%; float: left;background: #fff;margin-bottom: 5px;}
+.goods-list .screen-result .mui-col-xs-6:nth-of-type(even){margin-left: 0.7%;}
+.goods-list .screen-result .mui-col-xs-6:nth-of-type(odd){margin-right: 0.7%;}
+.goods-list .screen-result .mui-col-xs-6 img{width: 100%;float: left;}
+.goods-list .mui-search .mui-placeholder {top: 10px;height: 24px;line-height: 24px;}
+.goods-list .mui-input-row.mui-search.mui-active:before {height: 24px;line-height: 24px;}
+.goods-list .mui-search {width: 270px;margin: auto;}
+.goods-list .mui-search input[type=search] {border-radius: 30px;background: rgb(246, 246, 246);}
+.goods-list .mui-icon-search:before {color: lightgray;}
+/*goods-detail*/
+.goods-detail .goods-info {padding:13px 15px 25px 15px;background: #fff;}
+.goods-detail .goods-info .name {font-size: 16px;color: #000;padding-bottom: 10px;}
+.goods-detail .goods-info .price {color: red;font-size: 25px;padding: 30px 0 20px;font-weight: lighter;}
+.goods-detail .goods-bottom {margin-bottom: 60px;}
+.goods-detail .goods-bottom-de {padding-top: 5px;background: #fff;}
+.goods-detail .goods-bottom-de img{width: 100%;}
+.goods-detail .goods-detail-nav {position: fixed;bottom: 0px;width: 100%;background: #fff;}
+.goods-detail-nav .mui-col-xs-6 {display: inline-block;}
+.goods-detail-nav .mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body {font-size: 10px;color: #8f8f94; margin-top: 0px;}
+.goods-detail-nav .mui-table-view.mui-grid-view {padding: 5px 0 5px 0;}
+.goods-detail-nav .mui-table-view.mui-grid-view .mui-icon {line-height: 10px;color: #8f8f94;}
+.goods-detail-nav .mui-text-center {line-height: 56px;background: red;color: #fff;font-size: 16px}
+.goods-detail .mui-slider-indicator.mui-segmented-control {background: #fff;margin-top: 10px;margin-bottom: 1px;}
+.goods-detail .mui-segmented-control.mui-segmented-control-inverted .mui-control-item {line-height: 50px;}
+.goods-detail .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {border: 0;color: rgb(88,207,122);}
+.goods-detail .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active span{padding: 13px 0px; border-bottom:2px solid rgb(88,207,122);}
