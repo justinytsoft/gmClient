@@ -42,8 +42,8 @@ li {
 	border: 2px dashed #ffff00;
 }
 .border-tb1 {
-	border-top: 1px solid #d5d4d4;
-	border-bottom: 1px solid #d5d4d4;
+	border-top: 1px solid #e6e4e4;
+	border-bottom: 1px solid #e6e4e4;
 }
 .border-t1 {
 	border-top: 1px solid #D5D4D4;
@@ -93,6 +93,10 @@ li {
 .pdlr10 {
 	padding-left: 10px;
 	padding-right: 10px;
+}
+.pdlr15 {
+	padding-left: 15px;
+	padding-right: 15px;
 }
 .pdtb6 {
 	padding-top: 6px;
@@ -270,6 +274,51 @@ li {
 
 
 
+
+
+
+/* 推荐好友 */
+.recommended_frend .recommended_code img{
+	width:60%;
+	height: 150px;
+}
+.recommended_frend .recommended_code p{
+	padding: 3px 0;
+	color: #9e9e9e;
+	width: 60%;
+}
+.recommended_frend .mui-btn-block {
+	padding: 0;
+	border: none;
+	color: #FFFFFF;
+    background-color: #ff7e00;
+}
+
+/* 推荐提成 */
+.recommended_commission .recommended_code img{
+	width:60%;
+	height: 150px;
+}
+.recommended_commission .recommended_code p{
+	padding: 3px 0;
+	color: #9e9e9e;
+	width: 60%;
+}
+.recommended_commission .mui-btn-block {
+	padding: 0;
+	border: none;
+	color: #FFFFFF;
+    background-color: #ff7e00;
+}
+
+/* 系统设置 */
+.system_setting .mui-btn-block{
+	margin-top: 60px;
+	padding: 0;
+	border: none;
+	color: #FFFFFF;
+    background-color: #fb5a5a;
+}
 
 /* 服务商家 */
 .server_merchant .list{
