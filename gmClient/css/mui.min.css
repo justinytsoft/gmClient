@@ -2823,11 +2823,12 @@ select:focus {
 	left: 0;
 	display: inline-block;
 	height: 34px;
-	text-align: center;
+	text-align: left;
 	color: #999;
 	border: 0;
 	border-radius: 6px;
-	background: 0 0
+	background: 0 0;
+	padding-left: 10px;
 }
 
 .mui-search .mui-placeholder .mui-icon {
@@ -2851,7 +2852,8 @@ select:focus {
 .mui-search.mui-active:before {
 	font-size: 20px;
 	right: auto;
-	left: 5px;
+	left: 10px;
+	top:5px;
 	display: block;
 	margin-right: 0
 }

@@ -6,6 +6,7 @@
 		<title></title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/style.css" />
 		<style type="text/css">
 			.mui-row.mui-fullscreen>[class*="mui-col-"] {
 				height: 100%;
@@ -34,24 +35,24 @@
 		</style>
 	</head>
 
-	<body style="background: #fff;">
+	<body class="whiteBg categoryPage">
 		<header class="mui-bar mui-bar-nav">
-			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
 			<h1 class="mui-title">分类</h1>
 		</header>
 
 		<div class="mui-content">
 			<!--搜索-->
-			<div style="padding: 5px 15px;background: rgb(246,246,246);">
+			<div class="grayBg pd10">
 				<div class="mui-input-row mui-search">
-					<input type="search" class="mui-input-clear" placeholder="">
+					<input type="search" class="cl-gray mui-input-clear" placeholder="韩式风格">
 				</div>
 			</div>
 			
 			<!--clear-->
 			<div class="clr"></div>
+			
 			<!--分类wrap-->
-			<div class="class-wrap mui-row mui-fullscreen" style="top:90px;background: rgb(246,246,246);">
+			<div class="class-wrap mui-row mui-fullscreen" style="top:97px;background: rgb(246,246,246);">
 				<div class="mui-col-xs-3">
 					<div id="segmentedControls" class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-vertical">
 					</div>
@@ -66,29 +67,39 @@
 			mui.init({
 				swipeBack: true //启用右滑关闭功能
 			});
+			
+			var controlsList = [{name:"童装"},{name:"母乳"},{name:"餐具"},{name:"童装"},{name:"尿不湿"},{name:"奶粉"},{name:"孕妈用品"},{name:"沐浴护肤"}]
+			
 			var controls = document.getElementById("segmentedControls");
 			var contents = document.getElementById("segmentedControlContents");
 			var html = [];
-			var i = 1,
-				j = 1,
-				m = 16, //左侧选项卡数量+1
-				n = 21; //每个选项卡列表数量+1
+			var i = 0,
+				j = 0,
+				m = controlsList.length, //左侧选项卡数量+1
+				n = 10; //每个选项卡列表数量+1
 			for(; i < m; i++) {
-				html.push('<a class="mui-control-item" data-index="' + (i - 1) + '" href="#content' + i + '">选项' + i + '</a>');
+				html.push('<a class="mui-control-item" data-index="' + i + '" href="#content' + i + '">');
+				html.push("<span id='sel'></span>")
+				html.push('<span>'+controlsList[i].name+'</span>');
+				html.push('</a>');
 			}
 			controls.innerHTML = html.join('');
 			html = [];
-			for(i = 1; i < m; i++) {
+			for(i = 0; i < m; i++) {
 				html.push('<div id="content' + i + '" class="mui-control-content"><ul class="mui-table-view">');
-				for(j = 1; j < n; j++) {
-					html.push('<li class="mui-table-view-cell">第' + i + '个选项卡子项-' + j + '</li>');
+				html.push('<li class="mui-table-view-cell">');
+				for(j = 0; j < n; j++) {
+					html.push('<div class="mui-text-center mui-col-xs-4 mui-pull-left">')
+					html.push('<img src="../images/mer-de-b.png" class="wdp100"/>')
+					html.push("<div class='mui-ellipsis'>"+controlsList[i].name+"</div>")
+					html.push('</div>')
 				}
+				html.push('</li>');
 				html.push('</ul></div>');
 			}
 			contents.innerHTML = html.join('');
 			//默认选中第一个
 			controls.querySelector('.mui-control-item').classList.add('mui-active');
-			//			contents.querySelector('.mui-control-content').classList.add('mui-active');
 			(function() {
 				var controlsElem = document.getElementById("segmentedControls");
 				var contentsElem = document.getElementById("segmentedControlContents");

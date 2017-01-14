@@ -192,7 +192,7 @@ li {
 
 /* 宽度 */
 .wdp100 {
-	width: 100%;
+	width: 100%!important;
 }
 .wdp49 {
 	width: 49%!important;
@@ -271,7 +271,6 @@ li {
 
 
 
-
 /* 服务商家 */
 .server_merchant .list{
 	height: 105px;
@@ -328,9 +327,36 @@ li {
 }
 
 /* 分类页面 */
+.categoryPage .mui-search.mui-active:before {
+	top:25px;
+}
 .categoryPage input[type=search] {
     border-radius: 25px;
-    background-color: #FFFFFF;
+}
+.categoryPage .mui-table-view-cell,
+.categoryPage input[type=search] {
+    background-color: #ffffff;
+}
+.categoryPage .mui-table-view-cell{
+	padding: 10px 3px 10px 3px;
+}
+.categoryPage .mui-table-view-cell img {
+	border-radius: 5px;
+	height:70px;
+}
+.categoryPage #segmentedControls .mui-active #sel{
+	border-left: 3px solid #0add0a;
+	height: 30px;
+    float: left;
+    margin-top: 10px;
+}
+.categoryPage #segmentedControls .mui-active span{
+	color:#ff6963;
+}
+.categoryPage .mui-table-view-cell div {
+	padding-left: 5px;
+	padding-bottom: 5px;
+	color: #9E9E9E;
 }
 
 /* 个人中心 */
