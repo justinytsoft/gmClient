@@ -2,16 +2,20 @@ mui.ready(function(){
 	
 	mui.init();
 	
-	//添加银行卡点击事件
-	h("#addBank").tap(function(){
+	//头像点击事件
+	h("#headImg").tap(function(){
+		
+	});
+	
+	//联系人点击事件
+	h("#modifyPhone").tap(function(){
 		mui.openWindow({
-		    url:ipAdd+"/pages/bank_card_add.html",
-		    id:"bank_card_add.html",
+		    url:"phone.html",
+		    id:"phone.html",
 		    styles:{
 		      top:0,//新页面顶部位置
 		      bottom:0//新页面底部位置
 		    }
 		});
 	});
-	
 });

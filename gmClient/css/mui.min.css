@@ -230,7 +230,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: #007aff
+	color: #000000;
 }
 
 a:active {
@@ -1243,7 +1243,7 @@ input[type=submit]:enabled:active {
 	padding-right: 10px;
 	padding-left: 10px;
 	border-bottom: 0;
-	background-color: rgb(255,180,0);
+	background-color: #ffffff;
 	-webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .85);
 	box-shadow: 0 0 1px rgba(0, 0, 0, .85);
 	-webkit-backface-visibility: hidden;
@@ -1779,7 +1779,8 @@ input[type=submit]:enabled:active {
 	position: absolute;
 	right: 0;
 	left: 0;
-	height: 1px;
+	/*height: 1px;*/
+	height:0px;
 	content: '';
 	-webkit-transform: scaleY(.5);
 	transform: scaleY(.5);
@@ -2425,8 +2426,7 @@ textarea {
 	/*margin-bottom: 15px;*/
 	padding: 10px 15px;
 	-webkit-user-select: text;
-	/*border: 1px solid rgba(0, 0, 0, .2);*/
-	border:none;
+	border: 1px solid rgba(0, 0, 0, .2);
 	border-radius: 3px;
 	outline: 0;
 	background-color: #fff;

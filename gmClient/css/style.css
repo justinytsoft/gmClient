@@ -2,9 +2,9 @@
 	font-size: 15px;
 }
 .category {
-	font-weight: 650;
+	font-weight: 600;
 	padding-left: 10px;
-	border-left: 7px solid limegreen;
+	border-left: 3px solid limegreen;
 }
 
 /* 浮动 */
@@ -17,7 +17,7 @@
 	border: 1px solid #e7e6e6;
 }
 .border-b1 {
-	border-bottom: 1px solid #d5d4d4;
+	border-bottom: 1px solid #f6f6f6;
 }
 .border-no {
 	border: none;
@@ -136,6 +136,9 @@
 .mgt10 {
 	margin-top: 10px;
 }
+.mgt13 {
+	margin-top: 13px;
+}
 .mgt20 {
 	margin-top: 20px;
 }
@@ -246,9 +249,28 @@
 }
 
 
+/* 修改手机 */
+.phone .mui-btn, button{
+	color: #a9a9a9;
+	width: 30%;
+	height:40px;
+}
+.phone .mui-btn-block{
+	width:100%;
+	padding: 0;
+	background-color: #ff7e00;
+	color: #FFFFFF;
+	border-radius: 10px;
+	border: none;
+	font-size: 16px;
+}
 
-
-
+/* 账户设置 */
+.account img {
+	width:60px;
+	height:60px;
+	border-radius: 50%;
+}
 
 /* 首页 */
 .main .mui-col-xs-2 {
