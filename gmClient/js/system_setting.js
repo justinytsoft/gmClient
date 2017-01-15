@@ -8,7 +8,7 @@ mui.ready(function() {
 	h("#aboutUs").tap(function(){
 		mui.openWindow({
 		    url:"about_us.html",
-		    id:"index.html",
+		    id:"about_us.html",
 		    styles:{
 		      top:0,//新页面顶部位置
 		      bottom:0//新页面底部位置

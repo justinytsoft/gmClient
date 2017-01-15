@@ -1,4 +1,4 @@
-﻿{
+{
     "@platforms": ["android", "iPhone", "iPad"],
     "id": "H543C16BE",/*应用的标识，创建应用时自动生成，勿手动修改*/
     "name": "gmClient",/*应用名称，程序桌面图标名称*/
@@ -10,7 +10,7 @@
     "icons": {
         "72": "icon.png"
     },
-    "launch_path": "index.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+    "launch_path": "login.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
     "developer": {
         "name": "",/*开发者名称*/
         "email": "",/*开发者邮箱地址*/
@@ -137,36 +137,36 @@
                     "prerendered": true, /*应用图标是否已经高亮处理，在iOS6及以下设备上有效*/
                     "auto": "", /*应用图标，分辨率：512x512，用于自动生成各种尺寸程序图标*/
                     "iphone": {
-                        "normal": "", /*iPhone3/3GS程序图标，分辨率：57x57*/
-                        "retina": "", /*iPhone4程序图标，分辨率：114x114*/
-                        "retina7": "", /*iPhone4S/5/6程序图标，分辨率：120x120*/
-			"retina8": "", /*iPhone6 Plus程序图标，分辨率：180x180*/
-                        "spotlight-normal": "", /*iPhone3/3GS Spotlight搜索程序图标，分辨率：29x29*/
-                        "spotlight-retina": "", /*iPhone4 Spotlight搜索程序图标，分辨率：58x58*/
-                        "spotlight-retina7": "", /*iPhone4S/5/6 Spotlight搜索程序图标，分辨率：80x80*/
-                        "settings-normal": "", /*iPhone4设置页面程序图标，分辨率：29x29*/
-                        "settings-retina": "", /*iPhone4S/5/6设置页面程序图标，分辨率：58x58*/
-			"settings-retina8": "" /*iPhone6Plus设置页面程序图标，分辨率：87x87*/
+                        "normal": "unpackage/res/icons/57x57.png", /*iPhone3/3GS程序图标，分辨率：57x57*/
+                        "retina": "unpackage/res/icons/114x114.png", /*iPhone4程序图标，分辨率：114x114*/
+                        "retina7": "unpackage/res/icons/120x120.png", /*iPhone4S/5/6程序图标，分辨率：120x120*/
+			"retina8": "unpackage/res/icons/180x180.png", /*iPhone6 Plus程序图标，分辨率：180x180*/
+                        "spotlight-normal": "unpackage/res/icons/29x29.png", /*iPhone3/3GS Spotlight搜索程序图标，分辨率：29x29*/
+                        "spotlight-retina": "unpackage/res/icons/58x58.png", /*iPhone4 Spotlight搜索程序图标，分辨率：58x58*/
+                        "spotlight-retina7": "unpackage/res/icons/80x80.png", /*iPhone4S/5/6 Spotlight搜索程序图标，分辨率：80x80*/
+                        "settings-normal": "unpackage/res/icons/29x29.png", /*iPhone4设置页面程序图标，分辨率：29x29*/
+                        "settings-retina": "unpackage/res/icons/58x58.png", /*iPhone4S/5/6设置页面程序图标，分辨率：58x58*/
+			"settings-retina8": "unpackage/res/icons/87x87.png" /*iPhone6Plus设置页面程序图标，分辨率：87x87*/
                     },
                     "ipad": {
-                        "normal": "", /*iPad普通屏幕程序图标，分辨率：72x72*/
-                        "retina": "", /*iPad高分屏程序图标，分辨率：144x144*/
-                        "normal7": "", /*iPad iOS7程序图标，分辨率：76x76*/
-                        "retina7": "", /*iPad iOS7高分屏程序图标，分辨率：152x152*/
-                        "spotlight-normal": "", /*iPad Spotlight搜索程序图标，分辨率：50x50*/
-                        "spotlight-retina": "", /*iPad高分屏Spotlight搜索程序图标，分辨率：100x100*/
-                        "spotlight-normal7": "",/*iPad iOS7 Spotlight搜索程序图标，分辨率：40x40*/
-                        "spotlight-retina7": "",/*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
-                        "settings-normal": "",/*iPad设置页面程序图标，分辨率：29x29*/
-                        "settings-retina": "" /*iPad高分屏设置页面程序图标，分辨率：58x58*/
+                        "normal": "unpackage/res/icons/72x72.png", /*iPad普通屏幕程序图标，分辨率：72x72*/
+                        "retina": "unpackage/res/icons/144x144.png", /*iPad高分屏程序图标，分辨率：144x144*/
+                        "normal7": "unpackage/res/icons/76x76.png", /*iPad iOS7程序图标，分辨率：76x76*/
+                        "retina7": "unpackage/res/icons/152x152.png", /*iPad iOS7高分屏程序图标，分辨率：152x152*/
+                        "spotlight-normal": "unpackage/res/icons/50x50.png", /*iPad Spotlight搜索程序图标，分辨率：50x50*/
+                        "spotlight-retina": "unpackage/res/icons/100x100.png", /*iPad高分屏Spotlight搜索程序图标，分辨率：100x100*/
+                        "spotlight-normal7": "unpackage/res/icons/40x40.png",/*iPad iOS7 Spotlight搜索程序图标，分辨率：40x40*/
+                        "spotlight-retina7": "unpackage/res/icons/80x80.png",/*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+                        "settings-normal": "unpackage/res/icons/29x29.png",/*iPad设置页面程序图标，分辨率：29x29*/
+                        "settings-retina": "unpackage/res/icons/58x58.png" /*iPad高分屏设置页面程序图标，分辨率：58x58*/
                     }
                 },
                 "android": {
-                    "mdpi": "", /*普通屏程序图标，分辨率：48x48*/
-                    "ldpi": "", /*大屏程序图标，分辨率：48x48*/
-                    "hdpi": "", /*高分屏程序图标，分辨率：72x72*/
-                    "xhdpi": "",/*720P高分屏程序图标，分辨率：96x96*/
-                    "xxhdpi": ""/*1080P 高分屏程序图标，分辨率：144x144*/
+                    "mdpi": "unpackage/res/icons/48x48.png", /*普通屏程序图标，分辨率：48x48*/
+                    "ldpi": "unpackage/res/icons/48x48.png", /*大屏程序图标，分辨率：48x48*/
+                    "hdpi": "unpackage/res/icons/72x72.png", /*高分屏程序图标，分辨率：72x72*/
+                    "xhdpi": "unpackage/res/icons/96x96.png",/*720P高分屏程序图标，分辨率：96x96*/
+                    "xxhdpi": "unpackage/res/icons/144x144.png"/*1080P 高分屏程序图标，分辨率：144x144*/
                 }
             },
             "splashscreen": {
@@ -191,13 +191,429 @@
                     }
                 },
                 "android": {
-                    "mdpi": "", /*普通屏启动图片，分辨率：240x282*/
-                    "ldpi": "", /*大屏启动图片，分辨率：320x442*/
-                    "hdpi": "", /*高分屏启动图片，分辨率：480x762*/
-                    "xhdpi": "", /*720P高分屏启动图片，分辨率：720x1242*/
-                    "xxhdpi": ""/*1080P高分屏启动图片，分辨率：1080x1882*/
+                    "mdpi": "C:/Users/justi/Desktop/商家启动页.png", /*普通屏启动图片，分辨率：240x282*/
+                    "ldpi": "C:/Users/justi/Desktop/商家启动页.png", /*大屏启动图片，分辨率：320x442*/
+                    "hdpi": "C:/Users/justi/Desktop/商家启动页.png", /*高分屏启动图片，分辨率：480x762*/
+                    "xhdpi": "C:/Users/justi/Desktop/商家启动页.png", /*720P高分屏启动图片，分辨率：720x1242*/
+                    "xxhdpi": "C:/Users/justi/Desktop/商家启动页.png"/*1080P高分屏启动图片，分辨率：1080x1882*/
                 }
             }
         }
-    }
+    },
+	"dependencies":{
+		"pages": {
+			"pages/mer_detail.html": {
+				"href": "pages/mer_detail.html",
+				"resources": [
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"css/style.css",
+					"css/iconfont/iconfont.css",
+					"css/iconfont/iconfont.eot",
+					"css/iconfont/iconfont.woff",
+					"css/iconfont/iconfont.ttf",
+					"css/iconfont/iconfont.svg",
+					"js/mui.min.js",
+					"images/mer.png",
+					"images/mer-de-a.png",
+					"images/mer-de-b.png",
+					"images/cbd.jpg",
+					"images/muwu.jpg"
+				],
+				"priority": 0
+			},
+			"pages/server_merchant.html": {
+				"href": "pages/server_merchant.html",
+				"resources": [
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"css/style.css",
+					"js/mui.min.js",
+					"libs/h.min.js",
+					"js/util.js",
+					"images/product.png",
+					"images/cbd.jpg",
+					"images/muwu.jpg",
+					"images/yuantiao.jpg",
+					"images/category/education.png",
+					"images/category/photo.png",
+					"images/category/hotel.png",
+					"images/category/call_police.png"
+				],
+				"refer": [
+					"pages/mer_detail.html"
+				],
+				"priority": 0
+			},
+			"pages/goods_detail.html": {
+				"href": "pages/goods_detail.html",
+				"resources": [
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"css/style.css",
+					"css/iconfont/iconfont.css",
+					"css/iconfont/iconfont.eot",
+					"css/iconfont/iconfont.woff",
+					"css/iconfont/iconfont.ttf",
+					"css/iconfont/iconfont.svg",
+					"js/mui.min.js",
+					"libs/h.min.js",
+					"js/util.js",
+					"js/goods_detail.js",
+					"images/gd-de-a.jpg",
+					"images/gd-de-b.png",
+					"images/gd-de-c.jpg",
+					"images/gd-de.png"
+				],
+				"refer": [
+					"pages/mer_detail.html"
+				],
+				"priority": 1
+			},
+			"pages/goods_list.html": {
+				"href": "pages/goods_list.html",
+				"resources": [
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"css/style.css",
+					"js/mui.min.js",
+					"libs/h.min.js",
+					"js/util.js",
+					"images/cbd.jpg",
+					"images/muwu.jpg"
+				],
+				"priority": 2,
+				"refer": []
+			},
+			"pages/main.html": {
+				"href": "pages/main.html",
+				"resources": [
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"css/style.css",
+					"js/mui.min.js",
+					"libs/h.min.js",
+					"js/util.js",
+					"js/main.js",
+					"images/cbd.jpg",
+					"images/muwu.jpg",
+					"images/yuantiao.jpg",
+					"images/shuijiao.jpg",
+					"images/category/education.png",
+					"images/category/photo.png",
+					"images/category/hotel.png",
+					"images/category/call_police.png",
+					"images/category/other.png"
+				],
+				"refer": [
+					"pages/server_merchant.html",
+					"pages/goods_detail.html",
+					"pages/goods_list.html"
+				],
+				"priority": 0
+			},
+			"pages/recommended_frend.html": {
+				"href": "pages/recommended_frend.html",
+				"resources": [
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"css/style.css",
+					"js/mui.min.js",
+					"libs/h.min.js",
+					"js/util.js",
+					"images/yuantiao.jpg"
+				],
+				"priority": 1
+			},
+			"pages/recommended_commission.html": {
+				"href": "pages/recommended_commission.html",
+				"resources": [
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"css/style.css",
+					"js/mui.min.js",
+					"libs/h.min.js",
+					"js/util.js",
+					"js/recommended_commission.js",
+					"images/yuantiao.jpg"
+				],
+				"refer": [
+					"pages/recommended_frend.html"
+				],
+				"priority": 1
+			},
+			"pages/personal_center.html": {
+				"href": "pages/personal_center.html",
+				"resources": [
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"css/style.css",
+					"js/mui.min.js",
+					"libs/h.min.js",
+					"js/util.js",
+					"js/personal_center.js",
+					"images/cbd.jpg"
+				],
+				"refer": [
+					"pages/recommended_commission.html",
+					"pages/account.html",
+					"pages/system_setting.html"
+				],
+				"priority": 1
+			},
+			"pages/category.html": {
+				"href": "pages/category.html",
+				"resources": [
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"css/style.css",
+					"js/mui.min.js",
+					"images/mer-de-b.png",
+					"libs/h.min.js",
+					"js/category.js"
+				],
+				"refer": [
+					"pages/goods_detail.html"
+				],
+				"priority": 2
+			},
+			"index.html": {
+				"href": "index.html",
+				"resources": [
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"css/style.css",
+					"css/iconfont/iconfont.css",
+					"css/iconfont/iconfont.eot",
+					"css/iconfont/iconfont.woff",
+					"css/iconfont/iconfont.ttf",
+					"css/iconfont/iconfont.svg",
+					"js/mui.min.js",
+					"libs/h.min.js",
+					"js/util.js",
+					"js/index.js",
+					"pages/main.html"
+				],
+				"refer": [
+					"pages/personal_center.html",
+					"pages/category.html",
+					"pages/goods_list.html"
+				],
+				"priority": 0
+			},
+			"login.html": {
+				"resources": [
+					"css/iconfont/iconfont.css",
+					"css/iconfont/iconfont.woff",
+					"images/login-adv.png",
+					"js/util.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"js/login.js",
+					"css/mui.min.css",
+					"libs/h.min.js",
+					"css/style.css",
+					"pages/merchant_franchise.html"
+				],
+				"refer": [
+					"index.html"
+				],
+				"priority": 0
+			},
+			"pages/merchant_franchise.html": {
+				"resources": [
+					"js/common.js",
+					"js/immersed.js",
+					"login.html",
+					"images/bank-bg.jpg",
+					"js/merchant_franchise.js",
+					"js/util.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"libs/h.min.js",
+					"css/style.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"pages/account.html": {
+				"resources": [
+					"images/login-adv.png",
+					"js/account.js",
+					"js/util.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"libs/h.min.js",
+					"css/style.css"
+				],
+				"refer": [
+					"pages/phone.html"
+				],
+				"priority": 0
+			},
+			"pages/system_setting.html": {
+				"resources": [
+					"js/system_setting.js"
+				],
+				"refer": [
+					"pages/about_us.html",
+					"login.html"
+				],
+				"priority": 0
+			},
+			"pages/about_us.html": {
+				"resources": [
+					"images/cbd.jpg",
+					"js/util.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"libs/h.min.js",
+					"css/style.css"
+				],
+				"refer": [],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"libs/vue.js",
+				"js/mui.dtpicker.js",
+				"examples/popovers.html",
+				"examples/icons.html",
+				"examples/offcanvas-drag-left-plus-menu.html",
+				"fonts/mui-icons-extra.ttf",
+				"examples/numbox.html",
+				"examples/im-chat.html",
+				"js/mui.poppicker.js",
+				"images/60x60.gif",
+				"js/mui.previewimage.js",
+				"css/mui.imageviewer.css",
+				"examples/slider-table-default.html",
+				"js/mui.js",
+				"libs/echarts.min.js",
+				"js/city.data.js",
+				"js/mui.view.js",
+				"js/beecloud.js",
+				"examples/pullrefresh_sub.html",
+				"examples/actionsheet-plus.html",
+				"examples/tab-with-segmented-control-vertical.html",
+				"examples/setting.html",
+				"examples/accordion.html",
+				"css/mui.listpicker.css",
+				"js/mui.lazyload.js",
+				"examples/buttons-with-block.html",
+				"examples/list-triplex-row.html",
+				"js/city.data-3.js",
+				"js/95516.js",
+				"examples/tabbar.html",
+				"examples/login.html",
+				"css/mui.dtpicker.css",
+				"fonts/iconfont/iconfont.woff",
+				"css/mui.picker.all.css",
+				"js/update.js",
+				"examples/pullrefresh_with_tab.html",
+				"js/feedback.js",
+				"examples/tab-vertical-scroll.html",
+				"js/mui.imageViewer.js",
+				"fonts/iconfont/iconfont.ttf",
+				"libs/echarts-all.js",
+				"js/ad.js",
+				"examples/media-list.html",
+				"examples/grid-default.html",
+				"images/logo.png",
+				"examples/grid-pagination.html",
+				"examples/pagination.html",
+				"examples/radio.html",
+				"examples/tab-with-viewpagerindicator.html",
+				"js/mui.indexedlist.js",
+				"js/mui.pullToRefresh.js",
+				"examples/picker.html",
+				"examples/tab-webview-subpage-chat.html",
+				"examples/tab-webview-main.html",
+				"examples/clouddb_wilddog.html",
+				"examples/list-with-input.html",
+				"css/mui.indexedlist.css",
+				"examples/ajax.html",
+				"examples/checkbox.html",
+				"examples/buttons-with-loading.html",
+				"examples/modals.html",
+				"examples/nav.html",
+				"examples/tableviews-with-swipe.html",
+				"js/mui.locker.js",
+				"css/feedback.css",
+				"examples/buttons-with-icons.html",
+				"js/mui.picker.min.js",
+				"examples/imageviewer.html",
+				"examples/offcanvas-drag-left-plus-main.html",
+				"examples/buttons-with-badges.html",
+				"fonts/iconfont/iconfont.eot",
+				"examples/nav_transparent.html",
+				"examples/offcanvas-drag-right.html",
+				"js/mui.zoom.js",
+				"examples/typography.html",
+				"examples/template.html",
+				"css/iconfont/iconfont.js",
+				"examples/echarts.html",
+				"examples/tableviews-with-collapses.html",
+				"css/mui.picker.min.css",
+				"images/bank.png",
+				"examples/indexed-list-select.html",
+				"examples/tab-with-segmented-control.html",
+				"examples/input.html",
+				"js/mui.picker.js",
+				"examples/tab-webview-subpage-setting.html",
+				"examples/lazyload-image.html",
+				"js/mui.pullToRefresh.material.js",
+				"examples/dtpicker.html",
+				"examples/tab-webview-subpage-about.html",
+				"examples/slider-table-pagination.html",
+				"images/qrcode.png",
+				"examples/buttons.html",
+				"examples/indexed-list.html",
+				"examples/date.html",
+				"examples/guide.html",
+				"js/arttmpl.js",
+				"examples/tabbar-labels-only.html",
+				"pages/nickname.html",
+				"examples/offcanvas-drag-down.html",
+				"examples/tableviews.html",
+				"examples/slider-default.html",
+				"examples/badges.html",
+				"css/icons-extra.css",
+				"js/mui.lazyload.img.js",
+				"examples/slider-with-title.html",
+				"examples/tableviews-with-badges.html",
+				"examples/range.html",
+				"js/mui.listpicker.js",
+				"examples/tab-webview-subpage-contact.html",
+				"examples/offcanvas-drag-right-plus-main.html",
+				"examples/tabbar-with-submenus.html",
+				"css/mui.poppicker.css",
+				"images/login-1.png",
+				"examples/offcanvas-drag-right-plus-menu.html",
+				"examples/beecloud.html",
+				"examples/actionsheet.html",
+				"examples/info.html",
+				"examples/feedback.html",
+				"examples/offcanvas-drag-left.html",
+				"examples/dialog.html",
+				"examples/icons-extra.html",
+				"fonts/iconfont/iconfont.css",
+				"examples/ad.html",
+				"css/mui.picker.css",
+				"js/mui.picker.all.js",
+				"fonts/iconfont/iconfont.svg",
+				"examples/locker-dom.html",
+				"css/app.css",
+				"fonts/iconfont/iconfont.js",
+				"examples/pullrefresh_main.html",
+				"examples/progressbar.html",
+				"examples/card.html",
+				"examples/switches.html"
+			]
+		}
+	}
 }

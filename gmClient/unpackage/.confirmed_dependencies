@@ -31,7 +31,8 @@
 			"js/merchant_franchise.js",
 			"js/common.js",
 			"login.html",
-			"js/immersed.js"
+			"js/immersed.js",
+			"fonts/mui.ttf"
 		],
 		"refer": [
 			"login.html"
@@ -117,13 +118,224 @@
 			"js/mui.min.js",
 			"libs/h.min.js",
 			"js/util.js",
-			"js/index.js"
+			"js/index.js",
+			"css/iconfont/iconfont.css",
+			"css/iconfont/iconfont.woff",
+			"pages/main.html"
 		],
 		"refer": [
 			"pages/order.html",
 			"pages/money.html",
-			"pages/merchant_center.html"
+			"pages/merchant_center.html",
+			"pages/main.html",
+			"pages/personal_center.html",
+			"pages/category.html",
+			"pages/goods_list.html"
 		],
 		"priority": 0
+	},
+	"pages/mer_detail.html": {
+		"href": "pages/mer_detail.html",
+		"resources": [
+			"css/mui.min.css",
+			"css/style.css",
+			"css/iconfont/iconfont.css",
+			"js/mui.min.js",
+			"images/mer.png",
+			"images/mer-de-a.png",
+			"images/mer-de-b.png",
+			"images/cbd.jpg",
+			"images/muwu.jpg",
+			"css/iconfont/iconfont.woff",
+			"fonts/mui.ttf"
+		],
+		"refer": [],
+		"priority": 0
+	},
+	"pages/server_merchant.html": {
+		"href": "pages/server_merchant.html",
+		"resources": [
+			"css/mui.min.css",
+			"css/style.css",
+			"js/mui.min.js",
+			"libs/h.min.js",
+			"js/util.js",
+			"images/product.png",
+			"images/cbd.jpg",
+			"images/muwu.jpg",
+			"images/yuantiao.jpg",
+			"images/category/education.png",
+			"images/category/photo.png",
+			"images/category/hotel.png",
+			"images/category/call_police.png",
+			"fonts/mui.ttf"
+		],
+		"refer": [
+			"pages/mer_detail.html"
+		],
+		"priority": 0
+	},
+	"pages/goods_detail.html": {
+		"href": "pages/goods_detail.html",
+		"resources": [
+			"css/mui.min.css",
+			"css/style.css",
+			"css/iconfont/iconfont.css",
+			"js/mui.min.js",
+			"libs/h.min.js",
+			"js/util.js",
+			"js/goods_detail.js",
+			"images/gd-de-a.jpg",
+			"images/gd-de-b.png",
+			"images/gd-de-c.jpg",
+			"images/gd-de.png",
+			"css/iconfont/iconfont.woff",
+			"fonts/mui.ttf"
+		],
+		"refer": [
+			"pages/mer_detail.html"
+		],
+		"priority": 0
+	},
+	"pages/goods_list.html": {
+		"href": "pages/goods_list.html",
+		"resources": [
+			"css/mui.min.css",
+			"css/style.css",
+			"js/mui.min.js",
+			"libs/h.min.js",
+			"js/util.js",
+			"images/cbd.jpg",
+			"images/muwu.jpg",
+			"fonts/mui.ttf"
+		],
+		"refer": [],
+		"priority": 0
+	},
+	"pages/main.html": {
+		"href": "pages/main.html",
+		"resources": [
+			"css/mui.min.css",
+			"css/style.css",
+			"js/mui.min.js",
+			"libs/h.min.js",
+			"js/util.js",
+			"js/main.js",
+			"images/cbd.jpg",
+			"images/muwu.jpg",
+			"images/yuantiao.jpg",
+			"images/shuijiao.jpg",
+			"images/category/education.png",
+			"images/category/photo.png",
+			"images/category/hotel.png",
+			"images/category/call_police.png",
+			"images/category/other.png",
+			"fonts/mui.ttf"
+		],
+		"refer": [
+			"pages/server_merchant.html",
+			"pages/goods_detail.html",
+			"pages/goods_list.html"
+		],
+		"priority": 0
+	},
+	"pages/recommended_frend.html": {
+		"href": "pages/recommended_frend.html",
+		"resources": [
+			"css/mui.min.css",
+			"css/style.css",
+			"js/mui.min.js",
+			"libs/h.min.js",
+			"js/util.js",
+			"images/yuantiao.jpg"
+		],
+		"refer": [],
+		"priority": 0
+	},
+	"pages/recommended_commission.html": {
+		"href": "pages/recommended_commission.html",
+		"resources": [
+			"css/mui.min.css",
+			"css/style.css",
+			"js/mui.min.js",
+			"libs/h.min.js",
+			"js/util.js",
+			"js/recommended_commission.js",
+			"images/yuantiao.jpg"
+		],
+		"refer": [
+			"pages/recommended_frend.html"
+		],
+		"priority": 0
+	},
+	"pages/personal_center.html": {
+		"href": "pages/personal_center.html",
+		"resources": [
+			"css/mui.min.css",
+			"css/style.css",
+			"js/mui.min.js",
+			"libs/h.min.js",
+			"js/util.js",
+			"js/personal_center.js",
+			"images/cbd.jpg",
+			"fonts/mui.ttf"
+		],
+		"refer": [
+			"pages/recommended_commission.html",
+			"pages/account.html",
+			"pages/system_setting.html"
+		],
+		"priority": 0
+	},
+	"pages/category.html": {
+		"href": "pages/category.html",
+		"resources": [
+			"css/mui.min.css",
+			"css/style.css",
+			"js/mui.min.js",
+			"images/mer-de-b.png",
+			"libs/h.min.js",
+			"js/category.js",
+			"fonts/mui.ttf"
+		],
+		"refer": [
+			"pages/goods_detail.html"
+		],
+		"priority": 0
+	},
+	"pages/account.html": {
+		"resources": [
+			"images/login-adv.png",
+			"js/account.js",
+			"js/util.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"libs/h.min.js",
+			"css/style.css"
+		],
+		"refer": [
+			"pages/phone.html"
+		]
+	},
+	"pages/system_setting.html": {
+		"resources": [
+			"js/system_setting.js"
+		],
+		"refer": [
+			"pages/about_us.html",
+			"login.html"
+		]
+	},
+	"pages/about_us.html": {
+		"resources": [
+			"images/cbd.jpg",
+			"js/util.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"libs/h.min.js",
+			"css/style.css"
+		]
 	}
 }

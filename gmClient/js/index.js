@@ -3,7 +3,7 @@ mui.ready(function() {
 	//mui初始化
 	mui.init();
 
-	var subpages = ["pages/main.html", "pages/category.html", "pages/goods_list", "pages/personal_center.html"];
+	var subpages = ["pages/main.html", "pages/category.html", "pages/goods_list.html", "pages/personal_center.html"];
 	var subpage_style = {
 		top: "0px",
 		bottom: "51px"
@@ -13,7 +13,7 @@ mui.ready(function() {
 	//创建子页面，首个选项卡页面显示，其它均隐藏；
 	mui.plusReady(function() {
 		var self = plus.webview.currentWebview();
-		for(var i = 0; i < 3; i++) {
+		for(var i = 0; i < subpages.length; i++) {
 			var temp = {};
 			var sub = plus.webview.create(subpages[i], subpages[i], subpage_style);
 			if(i > 0) {
@@ -52,7 +52,7 @@ mui.ready(function() {
 	});
 
 	//自定义事件，模拟点击“首页选项卡”
-	document.addEventListener('money', function() {
+	document.addEventListener('main', function() {
 		var defaultTab = document.getElementById("defaultTab");
 		//模拟首页点击
 		mui.trigger(defaultTab, 'tap');

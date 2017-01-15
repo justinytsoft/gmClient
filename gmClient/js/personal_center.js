@@ -13,4 +13,26 @@ mui.ready(function(){
 		    }
 		});
 	});
+	
+	h("#account").tap(function(){
+		mui.openWindow({
+		    url:"account.html",
+		    id:"account.html",
+		    styles:{
+		      top:0,//新页面顶部位置
+		      bottom:0//新页面底部位置
+		    }
+		});
+	});
+	
+	h("#setting").tap(function(){
+		mui.openWindow({
+		    url:"system_setting.html",
+		    id:"system_setting.html",
+		    styles:{
+		      top:0,//新页面顶部位置
+		      bottom:0//新页面底部位置
+		    }
+		});
+	});
 });

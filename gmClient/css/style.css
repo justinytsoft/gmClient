@@ -614,6 +614,7 @@ li {
 /*商家相亲*/
 .top-wrap ,.middle-wrap ,.bottom-wrap , .top-wrap-row{background: #fff;}
 .top-wrap-img {font-size: 0px;line-height: 0px;}
+.top-wrap-img img {width: 100%;}
 .top-wrap-row ,.middle-wrap {padding: 15px 15px;}
 .top-wrap-row span {font-size: 16px}
 .top-wrap-row .mui-icon {color: rgb(88,207,122);font-size: 15px}
@@ -641,7 +642,7 @@ li {
 .goods-list .screen-result .mui-col-xs-6:nth-of-type(odd){margin-right: 0.7%;}
 .goods-list .screen-result .mui-col-xs-6 img{width: 100%;float: left;}
 .goods-list .mui-search .mui-placeholder {top: 10px;height: 24px;line-height: 24px;}
-.goods-list .mui-input-row.mui-search.mui-active:before {height: 24px;line-height: 24px;}
+.goods-list .mui-input-row.mui-search.mui-active:before {height: 24px;line-height: 24px;top: 20px;}
 .goods-list .mui-search {width: 270px;margin: auto;}
 .goods-list .mui-search input[type=search] {border-radius: 30px;background: rgb(246, 246, 246);}
 .goods-list .mui-icon-search:before {color: lightgray;}
