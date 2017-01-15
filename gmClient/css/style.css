@@ -375,6 +375,37 @@ li {
     font-size: 12px;
 }
 
+/* 店铺加盟页面 */
+.merchant_franchise .mui-table-view-cell > label{
+	margin-top:7px ;
+}
+.merchant_franchise .mui-radio > label{
+	padding-left: 40px;
+}
+.merchant_franchise .mui-radio input[type=radio] {
+    top: 8px;
+}
+.merchant_franchise input[type=text]{
+	padding :0 5px;
+}
+.merchant_franchise li{
+	padding : 15px 0 0 10px;
+}
+.merchant_franchise img{
+	width:45%;
+	height:120px;
+}
+.merchant_franchise textarea{
+	padding: 10px;
+	vertical-align: middle;
+}
+.merchant_franchise .mui-btn-block{
+	margin: 20px 0 0 0;
+	height:50px;
+	width:97%;
+	padding: 7px;
+}
+
 /* 分类页面 */
 .categoryPage .mui-search.mui-active:before {
 	top:25px;
