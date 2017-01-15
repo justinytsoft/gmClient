@@ -16,7 +16,6 @@ mui.plusReady(function() {
 	 */
 	mui(document.body).on('change', 'input[type=checkbox]', function() {
 		var value = this.checked ? "true" : "false";
-		alert(1)
 		h(this).val(value);
 	});
 	
@@ -24,7 +23,14 @@ mui.plusReady(function() {
 	 * 师傅加盟点击事件
 	 */
 	h("#join").tap(function(){
-		mui.openWindow("/pages/merchant_franchise.html");
+		mui.openWindow({
+		    url:"/pages/merchant_franchise.html",
+		    id:"merchant_franchise.html",
+		    styles:{
+		      top:0,//新页面顶部位置
+		      bottom:0//新页面底部位置
+		    }
+		});
 	});
 
 	/**

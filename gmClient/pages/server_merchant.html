@@ -7,6 +7,18 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link href="../css/mui.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="../css/style.css" />
+		<script>
+			function merDetail(){
+				mui.openWindow({
+				    url:"mer_detail.html",
+				    id:"mer_detail.html",
+				    styles:{
+				      top:0,//新页面顶部位置
+				      bottom:0//新页面底部位置
+				    }
+				});
+			}
+		</script>
 	</head>
 
 	<body class="whiteBg server_merchant">
@@ -78,7 +90,7 @@
 				
 				<div class="clr"></div>
 				
-				<div class="pd5 border-b1 list">
+				<div onclick="merDetail()" class="pd5 border-b1 list">
 					<div class="mui-pull-left">
 						<img src="../images/product.png" class="mui-pull-left mgr10"/>
 					</div>
@@ -92,7 +104,7 @@
 						<button type="button" class="mui-btn mui-btn-green">导航</button>
 					</div>
 				</div>
-				<div class="pd5 border-b1 list">
+				<div onclick="merDetail()" class="pd5 border-b1 list">
 					<div class="mui-pull-left">
 						<img src="../images/cbd.jpg" class="mui-pull-left mgr10"/>
 					</div>
@@ -106,7 +118,7 @@
 						<button type="button" class="mui-btn mui-btn-green">导航</button>
 					</div>
 				</div>
-				<div class="pd5 border-b1 list">
+				<div onclick="merDetail()" class="pd5 border-b1 list">
 					<div class="mui-pull-left">
 						<img src="../images/muwu.jpg" class="mui-pull-left mgr10"/>
 					</div>
@@ -120,7 +132,7 @@
 						<button type="button" class="mui-btn mui-btn-green">导航</button>
 					</div>
 				</div>
-				<div class="pd5 border-b1 list">
+				<div onclick="merDetail()" class="pd5 border-b1 list">
 					<div class="mui-pull-left">
 						<img src="../images/yuantiao.jpg" class="mui-pull-left mgr10"/>
 					</div>

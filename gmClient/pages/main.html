@@ -7,10 +7,43 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link href="../css/mui.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="../css/style.css" />
+		<script>
+			function merList(){
+				mui.openWindow({
+				    url:"server_merchant.html",
+				    id:"server_merchant.html",
+				    styles:{
+				      top:0,//新页面顶部位置
+				      bottom:0//新页面底部位置
+				    }
+				});
+			}
+			
+			function productList(){
+				mui.openWindow({
+				    url:"goods_list.html",
+				    id:"goods_list.html",
+				    styles:{
+				      top:0,//新页面顶部位置
+				      bottom:0//新页面底部位置
+				    }
+				});
+			}
+			
+			function productDtail(){
+				mui.openWindow({
+				    url:"goods_detail.html",
+				    id:"goods_detail.html",
+				    styles:{
+				      top:0,//新页面顶部位置
+				      bottom:0//新页面底部位置
+				    }
+				});
+			}
+		</script>
 	</head>
 
 	<body class="whiteBg main">
-		
 		<div class="mui-content grayBg">
 			<div class="whiteBg">
 				<div class="mui-text-center pd10">
@@ -68,31 +101,31 @@
 				
 				<div class="pdtb10">
 					<ul class="mui-table-view mui-grid-view">
-					    <li class="mui-table-view-cell mui-media mui-col-xs-2">
+					    <li onclick="merList()" class="mui-table-view-cell mui-media mui-col-xs-2">
 					        <a href="#">
 					            <img class="mui-media-object" src="../images/category/education.png">
 					            <div class="mui-media-body">教育</div>
 					        </a>
 					    </li>
-					    <li class="mui-table-view-cell mui-media mui-col-xs-2">
+					    <li onclick="merList()" class="mui-table-view-cell mui-media mui-col-xs-2">
 					        <a href="#">
 					            <img class="mui-media-object" src="../images/category/photo.png">
 					            <div class="mui-media-body">相馆</div>
 					        </a>
 					    </li>
-					    <li class="mui-table-view-cell mui-media mui-col-xs-2">
+					    <li onclick="merList()" class="mui-table-view-cell mui-media mui-col-xs-2">
 					        <a href="#">
 					            <img class="mui-media-object" src="../images/category/hotel.png">
 					            <div class="mui-media-body">月子中心</div>
 					        </a>
 					    </li>
-					    <li class="mui-table-view-cell mui-media mui-col-xs-2">
+					    <li onclick="merList()" class="mui-table-view-cell mui-media mui-col-xs-2">
 					        <a href="#">
 					            <img class="mui-media-object" src="../images/category/call_police.png">
 					            <div class="mui-media-body">儿童报警</div>
 					        </a>
 					    </li>
-					    <li class="mui-table-view-cell mui-media mui-col-xs-2">
+					    <li onclick="merList()" class="mui-table-view-cell mui-media mui-col-xs-2">
 					        <a href="#">
 					            <img class="mui-media-object" src="../images/category/other.png">
 					            <div class="mui-media-body">其他</div>
@@ -110,9 +143,9 @@
 					</div>
 					
 					<div class="pdtb10 pdlr5">
-						<img src="../images/cbd.jpg" class="wdp49 mgr5 mui-pull-left height265" />
-						<img src="../images/muwu.jpg" class="wdp49 mui-pull-left height130"/>
-						<img src="../images/yuantiao.jpg" class="wdp49 mgt5 height130"/>
+						<img onclick="productList()" src="../images/cbd.jpg" class="wdp49 mgr5 mui-pull-left height265" />
+						<img onclick="productList()" src="../images/muwu.jpg" class="wdp49 mui-pull-left height130"/>
+						<img onclick="productList()" src="../images/yuantiao.jpg" class="wdp49 mgt5 height130"/>
 					</div>
 				</div>
 				
@@ -122,7 +155,7 @@
 					</div>
 					
 					<div class="hot depGrayBg mgt5">
-						<div>
+						<div onclick="productDtail()">
 							<img src="../images/cbd.jpg" />
 							<div class="pdlr5">
 								<div class="pdtb6 fnts14 mui-ellipsis">宜家北欧实木组合长方形水曲</div>
@@ -132,7 +165,7 @@
 								</div>
 							</div>
 						</div>
-						<div>
+						<div onclick="productDtail()">
 							<img src="../images/muwu.jpg" />
 							<div class="pdlr5">
 								<div class="pdtb6 fnts14 mui-ellipsis">北欧休闲布艺咖啡椅</div>
@@ -142,7 +175,7 @@
 								</div>
 							</div>
 						</div>
-						<div>
+						<div onclick="productDtail()">
 							<img src="../images/yuantiao.jpg" />
 							<div class="pdlr5">
 								<div class="pdtb6 fnts14 mui-ellipsis">简约风钻石镂空铁丝椅</div>
@@ -152,7 +185,7 @@
 								</div>
 							</div>
 						</div>
-						<div>
+						<div onclick="productDtail()">
 							<img src="../images/shuijiao.jpg" />
 							<div class="pdlr5">
 								<div class="pdtb6 fnts14 mui-ellipsis">实木橡木圆形简易小茶几</div>
@@ -162,7 +195,7 @@
 								</div>
 							</div>
 						</div>
-						<div>
+						<div onclick="productDtail()">
 							<img src="../images/cbd.jpg" />
 							<div class="pdlr5">
 								<div class="pdtb6 fnts14 mui-ellipsis">宜家北欧实木组合长方形水曲</div>
@@ -172,7 +205,7 @@
 								</div>
 							</div>
 						</div>
-						<div>
+						<div onclick="productDtail()">
 							<img src="../images/cbd.jpg" />
 							<div class="pdlr5">
 								<div class="pdtb6 fnts14 mui-ellipsis">宜家北欧实木组合长方形水曲</div>
@@ -190,6 +223,7 @@
 		<script src="../js/mui.min.js"></script>
 		<script type="text/javascript" src="../libs/h.min.js" ></script>
 		<script type="text/javascript" src="../js/util.js" ></script>
+		<script type="text/javascript" src="../js/main.js" ></script>
 	</body>
 
 </html>

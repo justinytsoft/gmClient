@@ -64,6 +64,21 @@
 
 		<script src="../js/mui.min.js"></script>
 		<script type="text/javascript">
+			function detail(obj){
+				var name = h(h(obj).find("div").dom[0]).html();
+				mui.openWindow({
+				    url:"goods_detail.html",
+				    id:"goods_detail.html",
+				    extras:{
+						name:name
+				    },
+				    styles:{
+				      top:0,//新页面顶部位置
+				      bottom:0//新页面底部位置
+				    }
+				});		
+			}
+		
 			mui.init({
 				swipeBack: true //启用右滑关闭功能
 			});
@@ -89,7 +104,7 @@
 				html.push('<div id="content' + i + '" class="mui-control-content"><ul class="mui-table-view">');
 				html.push('<li class="mui-table-view-cell">');
 				for(j = 0; j < n; j++) {
-					html.push('<div class="mui-text-center mui-col-xs-4 mui-pull-left">')
+					html.push('<div onclick="detail(this)" class="mui-text-center mui-col-xs-4 mui-pull-left">')
 					html.push('<img src="../images/mer-de-b.png" class="wdp100"/>')
 					html.push("<div class='mui-ellipsis'>"+controlsList[i].name+"</div>")
 					html.push('</div>')
@@ -185,6 +200,8 @@
 				});
 			})();
 		</script>
+		<script type="text/javascript" src="../libs/h.min.js" ></script>
+		<script type="text/javascript" src="../js/category.js" ></script>
 	</body>
 
 </html>

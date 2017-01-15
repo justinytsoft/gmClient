@@ -3,7 +3,7 @@ mui.ready(function() {
 	//mui初始化
 	mui.init();
 
-	var subpages = ["pages/money.html", "pages/order.html", "pages/merchant_center.html"];
+	var subpages = ["pages/main.html", "pages/category.html", "pages/goods_list", "pages/personal_center.html"];
 	var subpage_style = {
 		top: "0px",
 		bottom: "51px"

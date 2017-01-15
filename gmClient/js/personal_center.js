@@ -2,16 +2,11 @@ mui.ready(function(){
 	
 	mui.init();
 	
-	//头像点击事件
-	h("#headImg").tap(function(){
-		
-	});
-	
-	//修改手机点击事件
-	h("#modifyPhone").tap(function(){
+	//推荐提成点击事件
+	h("#recommended_commission").tap(function(){
 		mui.openWindow({
-		    url:"phone.html",
-		    id:"phone.html",
+		    url:"recommended_commission.html",
+		    id:"recommended_commission.html",
 		    styles:{
 		      top:0,//新页面顶部位置
 		      bottom:0//新页面底部位置
